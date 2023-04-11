@@ -84,6 +84,18 @@ footer {
     background-color: rgba(255, 255, 255, 0.178);
 }
 
+.contactBox,
+.mainBox {
+    display: none;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
 .contactTools {
     text-decoration: underline;
 }
@@ -95,6 +107,30 @@ a {
 
 .logoLI {
     width: 25px;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%
+}
+
+.contactMean {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    min-width: 80%;
+    min-height: 200px;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.intro {
+    font-size: 1.5em;
+    align-content: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -110,4 +146,13 @@ a {
         padding: 5px
     }
 
+    .tools {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contactMean {
+        min-height: 100px;
+    }
 }
