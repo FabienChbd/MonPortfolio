@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    background-color: black;
+    background-image: url("Assets/Back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255)
+}
+
+header,
+footer {
+    display: none;
+    padding: 15px;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.178);
+    width: 100%;
+    position: fixed;
+
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.links {
+    padding-left: 15px;
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    font-size: 1.5em;
+}
+
+.adress {
+    padding-right: 15px;
+    border-right: solid rgb(255, 255, 255);
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+    font-size: 0.6em;
+}
+
+.name,
+.job,
+.lienEntree {
+    text-align: center;
+}
+
+.name {
+    font-size: 3rem
+}
+
+.job {
+    font-size: 2rem
+}
+
+.lienEntree {
+    font-size: 1.5rem;
+}
+
+.welcomeBox {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.contactTools {
+    text-decoration: underline;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.logoLI {
+    width: 25px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .links {
+        flex-direction: column;
+        gap: 0;
+        font-size: 1em
+    }
+
+    header,
+    footer {
+        padding: 5px
+    }
+
+}
