@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import PortfolioCard from "./components/PortfolioCard"
+import NavBar from "./components/NavBar"
+import "./App.css"
+import { useState } from "react"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
+  const [portfolioIndex, setPortfolioIndex] = useState(0)
+  const currentPortfolio = portfolioList[portfolioIndex]
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>
+      <h1>PORTFOLIO</h1><div className="portfolio">
+        <div>
+          <PortfolioCard portfolio={currentPortfolio} />
+        </div>
+        <div>
+          <NavBar portfolioList={portfolioList} portfolioIndex={portfolioIndex} setPortfolioIndex={setPortfolioIndex} />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </>
   )
 }
+
+const portfolioList = [
+  {
+    nom: "APE Le Sou de Maubec",
+    imgSrc: "",
+    link: "lesoudemaubec26.fr",
+    desc: "Site créé pour une assocation de parents d'éléves d'une école de Montélimar",
+  },
+  {
+    nom: "A beer for the Bear",
+    imgSrc: "",
+    link: "fabienchbd.github.io/ProjectQuizz",
+    desc: "Projet 1 lors de ma formation à la WCS 04/2023",
+  },
+  {
+    nom: "Dépots Git-Hub",
+    imgSrc: "",
+    link: "github.com/FabienChbd",
+    desc: "Mes dépots sur Git Hub",
+  },
+];
 
 export default App

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -18,14 +18,24 @@ footer {
     display: none;
     padding: 15px;
     flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(192, 159, 159, 0.5);
     width: 100%;
     position: fixed;
 
 }
 
+header {
+    height: 60px;
+}
+
+footer {
+    height: 10px
+}
+
 main {
     width: 90%;
+    padding-top: 100px;
+    padding-bottom: 45px;
     margin: auto;
 }
 
@@ -77,23 +87,27 @@ footer {
 
 .welcomeBox {
     display: flex;
-    width: 80%;
     margin: auto;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(192, 159, 159, 0.5);
 }
 
 .contactBox,
 .mainBox {
-    display: none;
-    width: 80%;
-    margin: auto;
     text-align: center;
-    flex-direction: column;
     align-items: center;
+}
+
+.contactBox,
+.mainBox,
+.CVBox,
+.portfolioBox {
+    display: none;
+    margin: auto;
+    flex-direction: column;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(192, 159, 159, 0.5);
 }
 
 .contactTools {
@@ -111,29 +125,76 @@ a {
 
 .tools {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 10%
+    align-items: center;
 }
 
 .contactMean {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    min-width: 80%;
-    min-height: 200px;
+    width: 110%;
+    min-height: 100px;
     font-size: 1.5em;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(192, 159, 159, 0.5);
 }
 
 .intro {
-    font-size: 1.5em;
-    align-content: center;
+    width: 90%;
+    font-size: 1.3em;
+
+}
+
+.infoLang {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px
+}
+
+.annee {
+    font-weight: bold;
+    text-decoration: underline;
+    padding-right: 10px;
+}
+
+h3 {
+    margin: 0;
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+.formation,
+.informatique,
+.experiences {
+    padding: 0 25px
+}
+
+.CVTitles {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.CVIntro {
+    text-align: center;
+    font-style: italic;
+}
+
+.photoCV {
+    padding-top: 25px;
+    width: 25%;
+    max-width: 120px;
+    margin: auto;
 }
 
 @media screen and (max-width: 600px) {
+
+    .welcomeBox {
+        width: 95%;
+    }
 
     .links {
         flex-direction: column;
@@ -152,7 +213,13 @@ a {
         justify-content: center;
     }
 
-    .contactMean {
-        min-height: 100px;
+    .infoLang {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px
+    }
+
+    .CVTitles {
+        font-size: 1.8em;
     }
 }
