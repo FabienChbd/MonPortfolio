@@ -94,7 +94,8 @@ footer {
 }
 
 .contactBox,
-.mainBox {
+.mainBox,
+.portfolioBox {
     text-align: center;
     align-items: center;
 }
@@ -190,6 +191,34 @@ h3 {
     margin: auto;
 }
 
+.cardImg {
+    max-width: 250px;
+    padding-bottom: 25px;
+    max-height: 200px;
+}
+
+.card {
+    background-color: rgba(192, 159, 159, 0.5);
+    width: 400px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.cardText {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgba(192, 159, 159, 0.5);
+    border: none;
+    border-radius: 5px;
+    margin: 0px 5px 10px 5px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 600px) {
 
     .welcomeBox {
@@ -221,5 +250,9 @@ h3 {
 
     .CVTitles {
         font-size: 1.8em;
+    }
+
+    .card {
+        width: 280px;
     }
 }
