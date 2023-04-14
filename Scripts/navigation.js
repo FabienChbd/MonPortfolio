@@ -1,3 +1,5 @@
+// NAVIGATION DANS LE SITE
+
 const entryWB = document.querySelector(".welcomeBox")
 const entryConct = document.querySelector(".contactBox")
 const entryH = document.querySelector("header")
@@ -15,15 +17,9 @@ selectorEntry.addEventListener("click", function () {
     entryH.style.display = "flex"
     entryF.style.display = "flex"
     entryM.style.display = "flex"
-    entryConct.style.display = "none"
-    entryCV.style.display = "none"
-    entryPort.style.display = "none"
 })
 
 selectorContact.addEventListener("click", function () {
-    entryWB.style.display = "none"
-    entryH.style.display = "flex"
-    entryF.style.display = "flex"
     entryM.style.display = "none"
     entryConct.style.display = "flex"
     entryCV.style.display = "none"
@@ -31,9 +27,6 @@ selectorContact.addEventListener("click", function () {
 })
 
 selectorCV.addEventListener("click", function () {
-    entryWB.style.display = "none"
-    entryH.style.display = "flex"
-    entryF.style.display = "flex"
     entryM.style.display = "none"
     entryConct.style.display = "none"
     entryCV.style.display = "flex"
@@ -41,11 +34,9 @@ selectorCV.addEventListener("click", function () {
 })
 
 selectorPort.addEventListener("click", function () {
-    entryWB.style.display = "none"
-    entryH.style.display = "flex"
-    entryF.style.display = "flex"
     entryM.style.display = "none"
     entryConct.style.display = "none"
     entryCV.style.display = "none"
     entryPort.style.display = "flex"
 })
+
