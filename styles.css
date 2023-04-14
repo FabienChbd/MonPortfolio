@@ -107,7 +107,7 @@ footer {
 }
 
 .CVBox {
-    width: 80%
+    width: 95%
 }
 
 .contactTools {
@@ -269,7 +269,7 @@ button {
     .infoLang {
         display: flex;
         flex-wrap: wrap;
-        gap: 25px
+        justify-content:flex-start ;
     }
 
     .CVTitles {
