@@ -146,9 +146,9 @@ a {
 }
 
 .infoLang {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -160,7 +160,7 @@ a {
 
 h3 {
   margin: 0;
-  font-weight: lighter;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -247,6 +247,10 @@ button {
   text-decoration: underline overline 1px;
 }
 
+strong {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 900px) {
   #cards {
     grid-template-columns: repeat(2, 1fr);
@@ -275,12 +279,6 @@ button {
     justify-content: center;
   }
 
-  .infoLang {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
   .CVTitles {
     font-size: 1.8em;
   }
@@ -294,6 +292,11 @@ button {
   }
 
   .contactMean {
-  width: 300px;
-  font-size: 1em;
+    width: 300px;
+    font-size: 1em;
+  }
+
+  .infoLang {
+    justify-content: start;
+  }
 }
