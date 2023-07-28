@@ -104,6 +104,10 @@ footer {
   background-color: rgba(192, 159, 159, 0.75);
 }
 
+h2 {
+  text-align: center;
+}
+
 .CVBox {
   width: 95%;
 }
@@ -190,12 +194,13 @@ h3 {
 }
 
 .cardImg {
-  width: 200px;
+  width: 150px;
   padding-bottom: 25px;
   margin: auto;
 }
 
-#cards {
+#cards,
+#cardsOld {
   padding: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -204,8 +209,8 @@ h3 {
 
 .card {
   background-color: rgba(192, 159, 159, 0.75);
-  width: 250px;
-  height: 400px;
+  width: 300px;
+  height: 450px;
   border-radius: 25px;
   padding: 15px;
   display: flex;
@@ -251,9 +256,19 @@ strong {
   text-decoration: underline;
 }
 
+video {
+  width: 75svw;
+  height: 75svh;
+  margin: auto;
+}
+
 @media screen and (max-width: 900px) {
   #cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 280px;
   }
 }
 
@@ -287,7 +302,8 @@ strong {
     width: 280px;
   }
 
-  #cards {
+  #cards,
+  #cardsOld {
     grid-template-columns: repeat(1, 1fr);
   }
 
