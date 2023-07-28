@@ -2,17 +2,17 @@
 
 const portfolioList = [
   {
+    nom: "Dépots Git-Hub",
+    imgSrc: "./Assets/Logo github.png",
+    link: "https://github.com/FabienChbd",
+    desc: "Mes dépots sur Git Hub",
+  },
+  {
     nom: "A beer for the Bear",
     imgSrc: "./Assets/Logo project 1.jpg",
     link: "https://fabienchbd.github.io/ProjectQuizz",
     linkGH: "https://github.com/FabienChbd/ProjectQuizz",
     desc: "Projet 1 lors de ma formation à la Wild Code School fait en Avril 2023 Languages utilisés : HTML, CSS et Vanilla JS",
-  },
-  {
-    nom: "Dépots Git-Hub",
-    imgSrc: "./Assets/Logo github.png",
-    link: "https://github.com/FabienChbd",
-    desc: "Mes dépots sur Git Hub",
   },
   {
     nom: "Pokedex",
