@@ -25,7 +25,7 @@ const portfolioList = [
   {
     nom: "TindBeer",
     imgSrc: "./Assets/Rate_Your_Beer.png",
-    link: "videoP2.html",
+    linkVideo: "videoP2.html",
     linkGH: "https://github.com/WildCodeSchool/2023-02-JS-Valence-P2-Tindbeer",
     desc: "Projet 2 lors de ma formation à la Wild Code School en Mai 2023 Languages utilisés : HTML, CSS et React JS avec utilisation d'une API - Le site n'a pas été mise en ligne, une vidéo d'utilisation est disponible sur le lien ci dessous",
   },
@@ -33,6 +33,7 @@ const portfolioList = [
     nom: "Makesense",
     imgSrc: "./Assets/logo_makesense.png",
     link: "https://makesense-front.valence.wilders.dev/login",
+    linkVideo: "videoP3.html",
     linkGH: "https://github.com/WildCodeSchool/2023-02-JS-Valence-P3-makesense",
     desc: "Projet 3 lors de ma formation à la Wild Code School en Juillet 2023 Languages utilisés : HTML, CSS et React JS en Frontend et Express en Backend. Gestion d'authentification via jetons et cookies. Site à accès limité, je peux vous fournir un accès test si nécessaire",
   },
@@ -59,44 +60,30 @@ const portfolioListOld = [
 
 const cards = document.querySelector("#cards");
 
-function createCard(imgSrc, nom, desc, link, linkGH) {
+function createCard(imgSrc, nom, desc, link, linkVideo, linkGH) {
   const card = document.createElement("div");
   card.classList.add("card");
   cards.appendChild(card);
 
-  if (imgSrc === undefined) {
-    const cardNoImg = document.createElement("p");
-    cardNoImg.innerText = "";
-    card.appendChild(cardNoImg);
-  } else {
+  if (imgSrc != undefined) {
     const cardImg = document.createElement("img");
     cardImg.classList.add("cardImg");
     cardImg.src = imgSrc;
     cardImg.alt = nom;
     card.appendChild(cardImg);
-
     const cardTitle = document.createElement("p");
     cardTitle.classList.add("cardTitle");
     cardTitle.innerText = nom;
     card.appendChild(cardTitle);
   }
 
-  if (imgSrc === undefined) {
-    const cardNoImgText = document.createElement("p");
-    cardNoImgText.classList.add("cardNoImgText");
-    cardNoImgText.innerText = desc;
-    card.appendChild(cardNoImgText);
-  } else {
+  if (desc != undefined) {
     const cardText = document.createElement("p");
     cardText.classList.add("cardText");
     cardText.innerText = desc;
     card.appendChild(cardText);
   }
-  if (link === undefined) {
-    const cardNoLink = document.createElement("p");
-    cardNoLink.innerText = "";
-    card.appendChild(cardNoLink);
-  } else {
+  if (link != undefined) {
     const cardLink = document.createElement("a");
     cardLink.href = link;
     cardLink.target = "_blank";
@@ -105,11 +92,16 @@ function createCard(imgSrc, nom, desc, link, linkGH) {
     cardButton.innerText = "Visitez ce site";
     cardLink.appendChild(cardButton);
   }
-  if (linkGH === undefined) {
-    const cardNoLinkGH = document.createElement("p");
-    cardNoLinkGH.innerText = "";
-    card.appendChild(cardNoLinkGH);
-  } else {
+  if (linkVideo != undefined) {
+    const cardLinkVideo = document.createElement("a");
+    cardLinkVideo.href = linkVideo;
+    cardLinkVideo.target = "_blank";
+    card.appendChild(cardLinkVideo);
+    const cardButton = document.createElement("button");
+    cardButton.innerText = "Démo vidéo";
+    cardLinkVideo.appendChild(cardButton);
+  }
+  if (linkGH != undefined) {
     const cardLinkGH = document.createElement("a");
     cardLinkGH.href = linkGH;
     cardLinkGH.target = "_blank";
@@ -126,6 +118,7 @@ for (let i = 0; i < portfolioList.length; i++) {
     portfolioList[i].nom,
     portfolioList[i].desc,
     portfolioList[i].link,
+    portfolioList[i].linkVideo,
     portfolioList[i].linkGH
   );
 }
