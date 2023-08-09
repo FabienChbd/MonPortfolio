@@ -177,6 +177,7 @@ a {
 .expPro {
   padding-left: 10svh;
 }
+
 .formation,
 .langues {
   width: 30svw;
@@ -349,5 +350,9 @@ video {
   .formation,
   .langues {
     width: 80svw;
+  }
+
+  .expPro {
+    padding-left: 2svh;
   }
 }
