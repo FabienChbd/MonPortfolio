@@ -16,48 +16,53 @@ body {
 header,
 footer {
   display: none;
-  padding: 15px;
   flex-direction: row;
   background-color: rgba(192, 159, 159, 0.75);
-  width: 100%;
+  width: 100svw;
   position: fixed;
+  padding: 0.5svh 1svh;
 }
 
 main {
-  width: 90%;
-  padding-top: 100px;
-  padding-bottom: 45px;
+  width: 90svw;
+  padding-top: 10svh;
+  padding-bottom: 4svh;
   margin: auto;
 }
 
 nav {
   display: flex;
-  width: 100%;
+  width: 98svw;
   align-items: center;
+  justify-content: space-between;
 }
 
 .links {
-  padding-left: 15px;
   display: flex;
-  gap: 25px;
+  gap: 2svh;
   justify-content: flex-end;
   font-size: 1.5em;
 }
 
 .adress {
-  padding-right: 15px;
   border-right: solid rgb(255, 255, 255);
+  padding-right: 1svh;
 }
 
 header {
   top: 0;
-  height: 60px;
+  height: 6svh;
 }
 
 footer {
   bottom: 0;
-  font-size: 0.6em;
-  height: 10px;
+  font-size: 0.8em;
+  height: 1.5svh;
+  vertical-align: middle;
+}
+
+.footer {
+  padding: 0;
 }
 
 .name,
@@ -109,7 +114,7 @@ h2 {
 }
 
 .CVBox {
-  width: 95%;
+  padding: 2svh;
 }
 
 .contactTools {
@@ -119,6 +124,10 @@ h2 {
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.linkWCS {
+  text-decoration: underline;
 }
 
 .logoLI {
@@ -136,8 +145,8 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: 25px;
-  width: 350px;
-  min-height: 100px;
+  width: 25svw;
+  min-height: 8svh;
   font-size: 1.25em;
   justify-content: center;
   align-items: center;
@@ -145,21 +154,37 @@ a {
 }
 
 .intro {
-  width: 90%;
+  width: 90svw;
   font-size: 1.3em;
 }
 
-.infoLang {
+.infoLang,
+.formLangues {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
 
+.informatique,
+.formLangues,
+.experiences {
+  border-top: dotted white 0.5px;
+  width: 80svw;
+  padding: 2svh 0;
+}
+
+.expPro {
+  padding-left: 10svh;
+}
+.formation,
+.langues {
+  width: 30svw;
+}
+
 .annee {
   font-weight: bold;
   text-decoration: underline;
-  padding-right: 10px;
 }
 
 h3 {
@@ -168,14 +193,7 @@ h3 {
   text-decoration: underline;
 }
 
-.formation,
-.informatique,
-.experiences {
-  padding: 0 25px;
-}
-
 .CVTitles {
-  padding-top: 20px;
   font-size: 2em;
   text-align: center;
   text-decoration: underline;
@@ -187,32 +205,31 @@ h3 {
 }
 
 .photoCV {
-  padding-top: 25px;
-  width: 25%;
+  width: 25svw;
   max-width: 120px;
   margin: auto;
+  padding: 2vh;
 }
 
 .cardImg {
-  width: 150px;
-  padding-bottom: 25px;
-  margin: auto;
+  width: 15svh;
+  margin: 0 auto 2svh auto;
 }
 
 #cards,
 #cardsOld {
-  padding: 25px;
+  padding: 2svh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 1.5svh;
 }
 
 .card {
   background-color: rgba(192, 159, 159, 0.75);
-  width: 300px;
-  height: 450px;
+  width: 20svw;
+  min-height: 40svh;
   border-radius: 25px;
-  padding: 15px;
+  padding: 2svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,16 +241,16 @@ h3 {
   font-weight: bold;
 }
 
-.cardNoImgText {
-  font-size: 1.5rem;
+.cardText {
+  font-size: 1.25rem;
 }
 
 button {
   background-color: rgb(148, 123, 123, 0.75);
   border: none;
   border-radius: 5px;
-  padding: 7px;
-  margin: 0px 5px 10px 5px;
+  padding: 0.5svh;
+  margin: 0.5svh;
   color: rgba(255, 255, 255);
   font-size: 1rem;
 }
@@ -274,18 +291,27 @@ video {
 
 @media screen and (max-width: 600px) {
   .welcomeBox {
-    width: 95%;
+    width: 90svw;
+  }
+
+  main {
+    padding-top: 11svh;
   }
 
   .links {
     flex-direction: column;
     gap: 0;
     font-size: 1em;
+    padding-left: 1svh;
   }
 
-  header,
-  footer {
-    padding: 5px;
+  nav {
+    width: 96svw;
+    justify-content: left;
+  }
+
+  header {
+    padding: 2svh;
   }
 
   .tools {
@@ -298,8 +324,12 @@ video {
     font-size: 1.8em;
   }
 
+  .cardText {
+    font-size: 1rem;
+  }
+
   .card {
-    width: 280px;
+    height: 55svh;
   }
 
   #cards,
@@ -313,6 +343,11 @@ video {
   }
 
   .infoLang {
-    justify-content: start;
+    align-items: center;
+  }
+
+  .formation,
+  .langues {
+    width: 80svw;
   }
 }
