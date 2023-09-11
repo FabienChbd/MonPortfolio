@@ -6,7 +6,7 @@ body {
   align-items: center;
   font-size: 1rem;
   background-color: black;
-  background-image: url("Assets/Back.png");
+  background-image: url("assets/Back.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
