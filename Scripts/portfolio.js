@@ -38,6 +38,21 @@ const portfolioList = [
     desc: "Projet 3 lors de ma formation à la Wild Code School en Juillet 2023 Languages utilisés : HTML, CSS et React JS en Frontend et Express en Backend. Gestion d'authentification via jetons et cookies. Site à accès limité, je peux vous fournir un accès test si nécessaire",
   },
   {
+    nom: "Don't Forget To",
+    imgSrc: "./assets/DFT.jpg",
+    link: "https://dontforgetto.onrender.com/",
+    linkGH:
+      "https://gist.github.com/FabienChbd/34e5161c70a676a49b90dcd913755708",
+    desc: "Projet fait quelques semaines avant la fin de formation en 1 jour et demi avec utilisation de Prisma et Type Script. Site à accès limité, je peux vous fournir un accès test si nécessaire",
+  },
+  {
+    nom: "Quizz for the bears",
+    imgSrc: "./assets/QFTB.jpg",
+    link: "https://quizzforthebears.onrender.com/",
+    linkGH: "https://github.com/FabienChbd/quizz-for-the-bears",
+    desc: "Dernier projet de la formation sous forme de checkpoint qui devait être réalisé en 2 jours (journées uniquement) - Utilisation de ReactJS en Frontent et Express en Backend. Base de données MySQL. Gestion de l'authentification via argon2. Site nécessitant un login mais vous pouvez le créer directement dans l'interface a cet effet.",
+  },
+  {
     desc: "BIENTOT D'AUTRES PROJETS...",
   },
 ];
