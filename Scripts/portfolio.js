@@ -26,7 +26,7 @@ const portfolioList = [
     nom: "TindBeer",
     imgSrc: "./assets/Rate_Your_Beer.png",
     linkVideo: "videoP2.html",
-    linkGH: "https://github.com/WildCodeSchool/2023-02-JS-Valence-P2-Tindbeer",
+    linkGH: "https://github.com/FabienChbd/2023-02-JS-Valence-P2-Tindbeer",
     desc: "Projet 2 lors de ma formation à la Wild Code School en Mai 2023 Languages utilisés : HTML, CSS et React JS avec utilisation d'une API - Le site n'a pas été mise en ligne, une vidéo d'utilisation est disponible sur le lien ci dessous",
   },
   {
@@ -34,7 +34,7 @@ const portfolioList = [
     imgSrc: "./assets/logo_makesense.png",
     link: "https://makesense-front.valence.wilders.dev/login",
     linkVideo: "videoP3.html",
-    linkGH: "https://github.com/WildCodeSchool/2023-02-JS-Valence-P3-makesense",
+    linkGH: "https://github.com/FabienChbd/2023-02-JS-Valence-P3-makesense",
     desc: "Projet 3 lors de ma formation à la Wild Code School en Juillet 2023 Languages utilisés : HTML, CSS et React JS en Frontend et Express en Backend. Gestion d'authentification via jetons et cookies. Site à accès limité, je peux vous fournir un accès test si nécessaire",
   },
   {
