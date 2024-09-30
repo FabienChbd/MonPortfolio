@@ -32,7 +32,6 @@ const portfolioList = [
   {
     nom: "Makesense",
     imgSrc: "./assets/logo_makesense.png",
-    link: "https://makesense-front.valence.wilders.dev/login",
     linkVideo: "videoP3.html",
     linkGH: "https://github.com/FabienChbd/2023-02-JS-Valence-P3-makesense",
     desc: "Projet 3 lors de ma formation à la Wild Code School en Juillet 2023 Languages utilisés : HTML, CSS et React JS en Frontend et Express en Backend. Gestion d'authentification via jetons et cookies. Site à accès limité, je peux vous fournir un accès test si nécessaire",
@@ -50,7 +49,7 @@ const portfolioList = [
     imgSrc: "./assets/QFTB.jpg",
     link: "https://quizzforthebears.onrender.com/",
     linkGH: "https://github.com/FabienChbd/quizz-for-the-bears",
-    desc: "Dernier projet de la formation sous forme de checkpoint qui devait être réalisé en 2 jours (journées uniquement) - Utilisation de ReactJS en Frontent et Express en Backend. Base de données MySQL. Gestion de l'authentification via argon2. Site nécessitant un login mais vous pouvez le créer directement dans l'interface a cet effet.",
+    desc: "Dernier projet de la formation sous forme de checkpoint qui devait être réalisé en 2 jours (journées uniquement) - Utilisation de ReactJS en Frontend et Express en Backend. Base de données MySQL. Gestion de l'authentification via argon2. Site nécessitant un login mais vous pouvez le créer directement dans l'interface a cet effet.",
   },
   {
     desc: "BIENTOT D'AUTRES PROJETS...",
@@ -61,16 +60,9 @@ const portfolioListOld = [
   {
     nom: "APE Le Sou de Maubec",
     imgSrc: "./assets/Logo Maubec.jpg",
-    link: "https://www.lesoudemaubec26.fr",
     linkGH: "https://github.com/FabienChbd/Asso",
     desc: "Site créé pour une assocation de parents d'éléves d'une école de Montélimar uniquement en HTML et CSS et quelques bases de PHP",
-  },
-  {
-    nom: "Ancien site",
-    imgSrc: "./assets/Logo old site.jpg",
-    link: "https://old.fabienchabaud.fr",
-    desc: "La version précédente du site que vous consultez actuellement (jusqu'en 04/2023) uniquement en HTML et CSS",
-  },
+  }
 ];
 
 const cards = document.querySelector("#cards");
