@@ -51,9 +51,6 @@ const portfolioList = [
     linkGH: "https://github.com/FabienChbd/quizz-for-the-bears",
     desc: "Dernier projet de la formation sous forme de checkpoint qui devait être réalisé en 2 jours (journées uniquement) - Utilisation de ReactJS en Frontend et Express en Backend. Base de données MySQL. Gestion de l'authentification via argon2. Site nécessitant un login mais vous pouvez le créer directement dans l'interface a cet effet.",
   },
-  {
-    desc: "BIENTOT D'AUTRES PROJETS...",
-  },
 ];
 
 const portfolioListOld = [
@@ -62,7 +59,7 @@ const portfolioListOld = [
     imgSrc: "./assets/Logo Maubec.jpg",
     linkGH: "https://github.com/FabienChbd/Asso",
     desc: "Site créé pour une assocation de parents d'éléves d'une école de Montélimar uniquement en HTML et CSS et quelques bases de PHP",
-  }
+  },
 ];
 
 const cards = document.querySelector("#cards");
